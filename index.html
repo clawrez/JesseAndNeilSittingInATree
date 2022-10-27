@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <title>..k-i-s-s-i-n-g</title>
+</head>
+<body>
+    <div class="game">
+        <button id="save" title="Game also saves every 15 seconds automatically.">Save</button>
+        <div class="currency-container">
+            <div id="jp">
+                Jesse Points: 0
+            </div>
+            <div id="np">
+                Neil Points: 0
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="click-container">
+                <div class="click" id="jesse" onclick="clickJesse()" style="background-image: url('css/img/jesse\ button.png'); "> </div>
+                <div class="click" id="neil" onclick="clickNeil()" style="background-image: url('css/img/neil\ button.png'); "> </div>
+            </div>
+        </div>
+        
+        <div class="upgrades-container">
+            <h1>Upgrades</h1><br>
+            <div class="upgrades">
+                <div class="row" id="row1">
+                    <div class="upgrade" id="up1" onclick="buyUp1()">Get 2x Jesse points per click<br>Costs <span id="up1p">25</span> NP</div>
+                    <div class="upgrade" id="up2" onclick="buyUp2()">Get 2x Neil Points per click<br>Costs <span id="up2p">25</span> JP</div>
+                    <div class="upgrade" id="up3" onclick="buyUp3()">Get Jesse points every second<br>Costs 100 NP</div>
+                    <div class="upgrade" id="up4" onclick="buyUp4()">Get Neil Points every second<br>Costs 100 JP</div>
+                </div>
+                <div class="row hiddenrow" id="row2">
+                    <!-- <div class="upgrade" id="up5" onclick="buyUp5()">Get 4x Jesse points per second<br>Costs 250 NP</div>
+                    <div class="upgrade" id="up6" onclick="buyUp6()">Get 4x Neil Points per second<br>Costs 250 JP</div>
+                    <div class="upgrade" id="up7" onclick="buyUp7()">Add First Jesse ability<br>Costs 5000 NP</div>
+                    <div class="upgrade" id="up8" onclick="buyUp8()">Add First Neil ability<br>Costs 5000 JP</div> -->
+            </div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
